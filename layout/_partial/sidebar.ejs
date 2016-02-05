@@ -1,0 +1,17 @@
+<aside id="sidebar">
+  <nav class="menus">
+  	<ul>
+  		<li><a href="/"><i class="icon icon-home"></i></a></li>
+  		<% if (theme.menu.Archives){ %>
+			<li><a href="/archives"><i class="icon icon-fenlei"></i></a></li>
+  		<% } %>
+  		<% if (theme.menu.Tag){ %>
+			<li><a href="<%= theme.menu.Tag %>"><i class="icon icon-tag"></i></a></li>
+  		<% } %>
+  		<% if (theme.menu.Github){ %>
+  			<li><a href="<%= theme.menu.Github %>" target="_blank"><i class="icon icon-github"></i></a></li>
+  		<% } %>
+  	</ul>
+  </nav>
+  <a id="go-top" href="#"><i class="icon icon-up"></i></a>
+</aside>

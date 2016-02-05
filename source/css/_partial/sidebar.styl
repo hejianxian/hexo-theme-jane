@@ -1,0 +1,65 @@
+#sidebar
+  display: none
+  @media mq-normal
+    display: block
+    position: fixed
+    right: 0
+    top: 0
+    width: 50px
+    height: 100%
+    background: color-sidebar
+    a#go-top
+      position: absolute
+      bottom: 10px
+      left: 0;
+      width: 50px
+      height: 50px
+      color: #fff
+      text-align: center
+      line-height: 50px
+      text-decoration: none
+      i.icon
+        font-family:"iconfont" !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 20px
+        &.icon-up
+          &:before 
+            content: "\e606"
+    .menus
+      padding-top: 10px
+      ul
+        li
+          a
+            display: block
+            width: 50px
+            height: 50px
+            margin-bottom: 5px
+            text-align: center
+            line-height: 50px
+            text-decoration: none
+            color: #fff
+            &:hover
+              color: #999
+            i.icon
+              font-family:"iconfont" !important;
+              font-style: normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+              font-size: 20px
+              &.icon-home
+                &:before 
+                  content: "\e600"
+              &.icon-fenlei
+                &:before
+                  content: "\e603"
+              &.icon-tag
+                &:before
+                  content: "\e601"
+              &.icon-github
+                &:before
+                  content: "\e604"    
+              

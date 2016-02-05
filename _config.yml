@@ -1,0 +1,15 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  Tag: /tags
+  Github: https://github.com/
+rss: /atom.xml
+
+# Content
+excerpt_link: More...
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
