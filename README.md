@@ -11,6 +11,12 @@
 ```
 git clone https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
 ```
+
+(optional)作为[git子模块安装](https://yuguo.us/weblog/git-submodule/)
+```
+git submodule add https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
+```
+
 然后配置根目录的_config.yml文件（并非theme里的那个）
 
 ```
