@@ -12,7 +12,7 @@
 git clone https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
 ```
 
-(optional)作为[git子模块安装](https://yuguo.us/weblog/git-submodule/)
+(optional)作为[git子模块](https://yuguo.us/weblog/git-submodule/)安装
 ```
 git submodule add https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
 ```
