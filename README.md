@@ -12,16 +12,17 @@
 git clone https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
 ```
 
-(optional)作为[git子模块](https://yuguo.us/weblog/git-submodule/)安装
-```
-git submodule add https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
-```
-
 然后配置根目录的_config.yml文件（并非theme里的那个）
 
 ```
 theme: jane
 ```
+
+若要作为git子模块安装
+```
+git submodule add https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
+```
+[关于git子模块](https://yuguo.us/weblog/git-submodule/)
 
 ### tags
 因为tags是单独一个页面展示，所以需要手动添加，输入以下命令就可以了
