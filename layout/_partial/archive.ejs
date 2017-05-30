@@ -12,7 +12,7 @@
   <% } %>
 <% } else { %>
   <% var last; %>
-  <% page.posts.each(function(post, i){ %>
+  <% site.posts.reverse().each(function(post, i){ %>
     <% var year = post.date.year(); %>
     <% if (last != year){ %>
       <% if (last != null){ %>
@@ -27,7 +27,7 @@
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
   <% }) %>
-  <% if (page.posts.length){ %>
+  <% if (site.posts.length){ %>
     </div></section>
   <% } %>
 <% } %>
