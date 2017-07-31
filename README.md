@@ -9,7 +9,7 @@
 ### 安装
 
 ```bash
-git clone https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
+git clone https://github.com/hejianxian/hexo-theme-jane.git themes/jane
 ```
 
 然后配置根目录的_config.yml文件（并非theme里的那个）
@@ -20,7 +20,7 @@ theme: jane
 
 若要作为git子模块安装
 ```bash
-git submodule add https://github.com/Alex-fun/hexo-theme-jane.git themes/jane
+git submodule add https://github.com/hejianxian/hexo-theme-jane.git themes/jane
 ```
 [关于git子模块](https://yuguo.us/weblog/git-submodule/)
 
