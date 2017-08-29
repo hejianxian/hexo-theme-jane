@@ -28,6 +28,23 @@ git submodule add https://github.com/hejianxian/hexo-theme-jane.git themes/jane
 
 新的 jane 主题使用了 [gitment](https://github.com/imsun/gitment) 评论系统，具体操作请看[这里](https://imsun.net/posts/gitment-introduction/)，若有任何问题，欢迎提 issue。
 
+如果注册 OAuth App 成功后，需要修改主题文件，找到`layout/_partial/article.ejs`，拉到最底下：
+
+```html
+// 请在这里正确地设置信息
+var gitment = new Gitment({
+  owner: '你的 github account',
+  repo: '接收 issue 的仓库，这里只需要仓库名字',
+  oauth: {
+    client_id: '创建 oauth 成功后的 client_id',
+    client_secret: '创建 oauth 成功后的 client_secret',
+  },
+})
+gitment.render('comments')
+```
+
+编辑后，重新编译并发布即可看到效果。
+
 ### tags
 因为tags是单独一个页面展示，所以需要手动添加，输入以下命令就可以了
 
