@@ -24,6 +24,10 @@ git submodule add https://github.com/hejianxian/hexo-theme-jane.git themes/jane
 ```
 [关于git子模块](https://yuguo.us/weblog/git-submodule/)
 
+### 关于评论
+
+新的 jane 主题使用了 [gitment](https://github.com/imsun/gitment) 评论系统，具体操作请看[这里](https://imsun.net/posts/gitment-introduction/)，若有任何问题，欢迎提 issue。
+
 ### tags
 因为tags是单独一个页面展示，所以需要手动添加，输入以下命令就可以了
 
