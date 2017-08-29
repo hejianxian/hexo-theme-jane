@@ -35,21 +35,18 @@
 
 <% if (!index && post.comments && config.disqus_shortname && page.path !== "tags/index.html"){ %>
 <section id="comments">
-  <div id="disqus_thread">
-    <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = '<%= config.disqus_shortname %>'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>
-    Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
-  </div>
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src='https://imsun.github.io/gitment/dist/gitment.browser.js'></script>
+  <script>
+    var gitment = new Gitment({
+      owner: 'your github account',
+      repo: 'your repo',
+      oauth: {
+        client_id: 'your client_id',
+        client_secret: 'your client_secret',
+      },
+    })
+    gitment.render('comments')
+  </script>
 </section>
 <% } %>
