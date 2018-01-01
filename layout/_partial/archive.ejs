@@ -12,7 +12,17 @@
   <% } %>
 <% } else { %>
   <% var last; %>
-  <% site.posts.sort('date', -1).each(function(post, i){ %>
+  <% 
+    var posts = site.posts
+    if (page.tag) {
+      posts = site.posts.filter(function(post) {
+        return post.tags.data.map(function(item) { return item.name }).some(function(tag) {
+          return tag === page.tag
+        })
+      })
+    }
+  %>
+  <% posts.sort('date', -1).each(function(post, i){ %>
     <% var year = post.date.year(); %>
     <% if (last != year){ %>
       <% if (last != null){ %>
